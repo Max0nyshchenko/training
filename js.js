@@ -972,5 +972,9 @@ function adding() {
 console.log(adding() + adding() + adding());
 
 var addng = (function() {
-    
+    var counter = 0;
+    return function() {counter+=1; return counter;};
 })();
+addng();
+addng();
+addng();
