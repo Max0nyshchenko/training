@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <div id="demo"></div>
+    <button type="button" onclick="insertName()">Insert name</button>
+    <br>
+    <img id="myimg" src="../pictures/70794809ac1ad01280d5b30860d7829d.jpg" alt="">
+
+    <a href="http://www.google.com" target="_blank">google</a>
+    <button type="button" onclick="changeToUtube()">change to youtube</button>
+
+    <div id="div2"></div>
+    <button id="imgRemoveBtn" type="button" onclick="removeImg()">remove img</button>
+
+    <div id="container">
+        <div id="box"></div>
+    </div>
+
+    <button id="time" type="button" onclick="time()">time</button>
+
+    <input type="text" name="name" id="name" onchange="change()">
+
+    <button type="button" id="randomNumber">random number generator</button>
+
+    <br><br>
+
+    <div class="slider">
+        <button type="button" onclick="prev()">prev</button>
+        <img id="slider" src="../pictures/alex-dukhanov-MFM8ASk4XNs-unsplash.jpg" width="200px" alt="some jpg">
+        <button type="button" onclick="next()">next</button>
+    </div>
+
+    <form onsubmit="return validate()" method="POST">
+        <label for="num1">Number</label>
+        <input type="text" name="num1" id="num1">
+        <label for="num2">Repeat</label>
+        <input type="text" name="num2" id="num2">
+        <input type="submit" value="Submit">
+    </form o>
+
+    <p id="hue">1, 22, 3, 54, 87</p>
+    <button type="button" onclick="pointssFunc1()">alfabetically</button>
+    <button type="button" onclick="pointssFunc2()">numericali</button>
+    
+    
+    <button type="button" onclick="DisplayCars()">display cars</button>
+    <button type="button" onclick="SortCars()">sort cars</button>
+    <div id="cars"></div>
+    <div id="hook"></div>
+    <div id="twice"></div>
+
+    
+    
+    <p id="ed2">j</p>
+    <hr>
+
+    <form name="anyForm" method="POST" onsubmit="return validationForm()" action="#">
+        Name: <input type="text" name="fname" id="">
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <input  id="num1to10">
+    <button type="submit" onclick="functionNum1to10()">submit</button>
+    <p id="outoutNum1to10"></p>
+    <hr>
+
+    <input type="number" id="id1" min="100" max="200" required>
+    <button type="submit" onclick="id1Function()">OK</button>
+    <p id="id1txt"></p>
+
+<script src="js.js"></script>
+</body>
+
+</html>
