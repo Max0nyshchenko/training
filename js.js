@@ -978,3 +978,78 @@ var addng = (function() {
 addng();
 addng();
 addng();
+
+var slide = document.getElementsByClassName('slider');
+console.log(slide[0]);
+
+var slide1 = document.querySelectorAll('div.slider');
+console.log(slide1[0]);
+
+function displayValues() {
+    var x = document.forms['form1'];
+    var txt = '';
+    var i;
+    var len = x.length;
+    for (i = 0; i < len; i++) {
+        txt += x.elements[i].value + '<br>';
+    }
+    console.log(txt);
+}
+
+document.getElementById('myimg').src = '../pictures/alex-dukhanov-MFM8ASk4XNs-unsplash.jpg';
+
+var anotherLevel = document.getElementsByClassName('another-level');
+anotherLevel[0].style.backgroundColor = 'white';
+
+function myMoo() {
+    var elem = document.getElementById('anim');
+    var pos = 0;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (pos == 370) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}
+
+function mDown(obj) {
+    obj.style.backgroundColor = 'red';
+    obj.innerHTML = 'reelease me';
+}
+function mUp(obj) {
+    obj.style.backgroundColor = 'green';
+    obj.innerHTML = 'thanx';
+}
+
+var  dateDisplay = document.getElementById('displayDate').addEventListener('click', dateDisplayFunc);
+
+function dateDisplayFunc () {
+    var txt = document.getElementById('displayDateDiv');
+    txt.innerHTML = Date();
+}
+
+var secondBtn = document.getElementById('secondBtn');
+secondBtn.addEventListener('mouseover', mySecondFunc);
+secondBtn.addEventListener('mouseout', myThirdFunc);
+secondBtn.addEventListener('click', myFourthFunc);
+
+function mySecondFunc() {
+    secondBtn.style.backgroundColor = 'seagreen';
+    secondBtn.style.padding = '1vw';
+}
+function myThirdFunc() {
+    secondBtn.style.backgroundColor = 'lightseagreen';
+    secondBtn.style.fontWeight = '900';
+}
+function myFourthFunc() {
+    var coun = 10;
+    secondBtn.style.marginLeft = '10vw';
+    
+    
+    
+}

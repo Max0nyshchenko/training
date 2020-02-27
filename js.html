@@ -79,6 +79,32 @@
     <button type="submit" onclick="id1Function()">OK</button>
     <p id="id1txt"></p>
 
+    <div class="another-level">
+        <div class="another-level-container">
+            <form id="form1" action="" method="get">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="">
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+            <button onclick="displayValues()">Display all the values</button>
+        </div>
+    </div>
+
+    <button onclick="myMoo()">my mooove</button>
+
+    <div id="cont">
+        <div id="anim"></div>
+    </div>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style ="width: 10vw; height: 6vw; background-color: aqua; padding: 2vw;">Click me</div>
+
+    <button id="displayDate">display date</button>
+    <div id="displayDateDiv"></div>
+
+    <button id="secondBtn">second btn</button>
+
 <script src="js.js"></script>
 </body>
 

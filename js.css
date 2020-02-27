@@ -31,3 +31,40 @@ body {
     height: 33px;
 }
 
+
+.another-level {
+    background-color: rgb(187, 30, 30);
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.another-level-container {
+    background-color: royalblue;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1vw;
+    width: 50%;
+    margin-left: 25%;
+}
+.another-level-container>button {
+    padding: 0.5vw;
+    margin: 0.5vw;
+    font-weight: 700;
+}
+
+#cont {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: sandybrown;
+}
+#anim {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: seagreen;
+}
