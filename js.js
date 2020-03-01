@@ -1053,3 +1053,34 @@ function myFourthFunc() {
     
     
 }
+
+var digit1 = 3;
+var digit2 = 8;
+
+var thirdBtn = document.getElementById('thirdBtn');
+thirdBtn.addEventListener('click', function(){thirdBtnFunc(digit1,digit2);});
+
+function thirdBtnFunc (a, b) {
+    var result = a * b;
+    document.getElementById('thirdBtnTxt').innerHTML = result;
+}
+
+document.getElementById('id02').innerHTML = 
+document.getElementById('id01').childNodes[0].nodeValue;
+
+var para = document.createElement('p');
+var node1 = document.createTextNode('new text node paragraph');
+para.appendChild(node1);
+var elemnt = document.getElementById('div3');
+elemnt.appendChild(para);
+
+var para2 = document.createElement('p');
+var node22 = document.createTextNode('new one before');
+para2.appendChild(node22);
+elemnt.insertBefore(para2, para);
+
+function removeFunc() {
+    para2.remove();
+}
+
+
