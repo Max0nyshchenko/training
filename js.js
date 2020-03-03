@@ -1083,4 +1083,75 @@ function removeFunc() {
     para2.remove();
 }
 
+function removeChildFunc() {
+    var para3 = document.createElement('h1');
+    var textNode = document.createTextNode('New H1');
+    para3.appendChild(textNode);
+    elemnt.replaceChild(para3, para);
+}
 
+var myCollection = document.getElementsByTagName('p');
+console.log(myCollection);
+
+var myNodeList = document.querySelectorAll('p');
+console.log(myNodeList);
+
+for (let i = 0; i < myNodeList.length; i++) {
+    myNodeList[i].style.backgroundColor = 'red';
+}
+
+function newDoc() {
+    window.location.assign('https://www.w3schools.com');
+}
+
+function timingFunc() {
+    let bd = document.getElementsByTagName('body');
+    bd[0].style.backgroundColor = 'seagreen';
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = 'expires=' + d.toGMTString();
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+}
+
+function getCookie(cname) {
+    var name = cname + '=';
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while(c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+return '';
+}
+
+function checkCookie() {
+    var user = getCookie('username');
+    if (user != '') {
+        alert('welcome again ' + user);
+    } else {
+        user  = prompt('please enter your name:', '');
+        if (user != '' && user != null) {
+            setCookie('username', user, 30);
+        }
+    }
+}
+
+function funcLoadData() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('loadDataTxt').innerHTML = 
+            this.responseText;
+        }
+    };
+    xhttp.open('GET', 'demo_get.asp?t=' + Math.random(), true);
+    xhttp.send();
+}
