@@ -3,6 +3,24 @@ h1 {
     text-align: center;
 }
 hr {
-    width: 250px;
+    width: 50px;
     text-align: center;
+}
+h3 {
+    text-align: center;
+}
+form {
+    margin: auto;
+}
+ul {
+    display: block;
+    margin: auto;
+}
+.list-wrapper {
+    display: grid;
+    justify-content: center;
+}
+.form-wrapper {
+    display: grid;
+    justify-content: center;
 }
